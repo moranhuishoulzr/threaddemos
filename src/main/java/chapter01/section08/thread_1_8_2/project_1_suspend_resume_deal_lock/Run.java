@@ -1,5 +1,8 @@
 package chapter01.section08.thread_1_8_2.project_1_suspend_resume_deal_lock;
 
+/**
+ * suspend()方法会占用锁，被禁用
+ */
 public class Run {
 	public static void main(String[] args) {
 		try {
@@ -28,6 +31,7 @@ public class Run {
 				}
 			};
 			thread2.start();
+
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

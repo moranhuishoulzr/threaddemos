@@ -1,5 +1,5 @@
 package chapter01.section10.thread_1_10_1.project_1_t18;
-
+//优先级具有继承性
 public class Run {
 	public static void main(String[] args) {
 		System.out.println("main thread begin priority="

@@ -1,5 +1,5 @@
 package chapter01.section11.project_1_daemonThread;
-
+//主线程执行完毕，守护线程自动消失
 public class Run {
 	public static void main(String[] args) {
 		try {
