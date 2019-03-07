@@ -1,5 +1,8 @@
 package chapter02.section01.thread_2_1_7.project_1_throwExceptionNoLock;
 
+/**
+ * 线程执行异常会自动释放当前占用的锁
+ */
 public class Service {
 	synchronized public void testMethod() {
 		if (Thread.currentThread().getName().equals("a")) {

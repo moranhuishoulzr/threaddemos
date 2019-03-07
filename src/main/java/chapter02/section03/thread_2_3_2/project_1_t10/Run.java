@@ -6,8 +6,13 @@ public class Run {
 		PrintString printStringService = new PrintString();
 		new Thread(printStringService).start();
 
-		System.out.println("æˆ‘è¦åœæ­¢å®ƒï¼stopThread="
+		System.out.println("ÎÒÒªÍ£Ö¹Ëü£¡stopThread="
 				+ Thread.currentThread().getName());
+		/*try {
+			Thread.sleep(2000);
+		}catch (InterruptedException e){
+			e.printStackTrace();
+		}*/
 		printStringService.setContinuePrint(false);
 	}
 

@@ -1,4 +1,7 @@
 package chapter02.section02.thread_2_2_7.project_3_syn_Out_asyn;
+/**
+ * “执行”“退出”是成对出现的，但线程A B 是异步执行的
+ */
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,5 +1,8 @@
 package chapter02.section01.thread_2_1_5.project_1_t3;
 
+/**
+ * 注意同步方法和不同步方法造成的脏读
+ */
 public class PublicVar {
 
 	public String username = "A";
@@ -18,8 +21,8 @@ public class PublicVar {
 			e.printStackTrace();
 		}
 	}
-
-	synchronized public void getValue() {
+	//synchronized
+	 public void getValue() {
 		System.out.println("getValue method thread name="
 				+ Thread.currentThread().getName() + " username=" + username
 				+ " password=" + password);

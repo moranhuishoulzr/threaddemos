@@ -2,7 +2,7 @@ package chapter02.section03.thread_2_3_2.project_1_t10;
 
 public class PrintString implements Runnable {
 
-	private boolean isContinuePrint = true;
+	private  boolean isContinuePrint = true;
 
 	public boolean isContinuePrint() {
 		return isContinuePrint;
@@ -25,7 +25,7 @@ public class PrintString implements Runnable {
 		}
 	}
 
-	@Override
+
 	public void run() {
 		printStringMethod();
 	}

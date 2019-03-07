@@ -9,7 +9,7 @@ public class MyService {
 				System.out.println(Thread.currentThread().getName() + " begin "
 						+ System.currentTimeMillis());
 				lock = "456";
-				Thread.sleep(2000);
+				Thread.sleep(5000);
 				System.out.println(Thread.currentThread().getName() + "   end "
 						+ System.currentTimeMillis());
 			}

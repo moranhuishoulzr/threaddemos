@@ -12,8 +12,8 @@ public class MyObject {
 			e.printStackTrace();
 		}
 	}
-
-	synchronized public void methodB() {
+	//synchronized
+	 public void methodB() {
 		try {
 			System.out.println("begin methodB threadName="
 					+ Thread.currentThread().getName() + " begin time="

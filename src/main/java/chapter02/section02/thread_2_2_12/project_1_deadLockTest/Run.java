@@ -1,5 +1,8 @@
 package chapter02.section02.thread_2_2_12.project_1_deadLockTest;
 
+/**
+ * JDK 自带工具可以检测是否死锁
+ */
 public class Run {
 	public static void main(String[] args) {
 		try {

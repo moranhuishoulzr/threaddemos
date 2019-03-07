@@ -12,6 +12,12 @@ public class Task {
 				System.out.println("synchronized threadName="
 						+ Thread.currentThread().getName() + " i=" + (i + 1));
 			}
+			try {
+				Thread.sleep(2000);
+
+			}catch (InterruptedException e){
+				e.printStackTrace();
+			}
 		}
 
 	}

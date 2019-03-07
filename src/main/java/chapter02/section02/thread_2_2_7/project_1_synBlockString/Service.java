@@ -4,7 +4,7 @@ public class Service {
 
 	private String usernameParam;
 	private String passwordParam;
-
+	//String anyString = new String();
 	public void setUsernamePassword(String username, String password) {
 		try {
 			String anyString = new String();

@@ -10,7 +10,7 @@ public class DealThread implements Runnable {
 		this.username = username;
 	}
 
-	@Override
+
 	public void run() {
 		if (username.equals("a")) {
 			synchronized (lock1) {

@@ -20,6 +20,11 @@ public class Run {
 		}, "T2");
 		// //
 		// //
+		/*try {
+			Thread.sleep(2000);
+		}catch (InterruptedException e){
+			e.printStackTrace();
+		}*/
 		Thread t3 = new Thread(new Runnable() {
 			public void run() {
 				in2.method1();

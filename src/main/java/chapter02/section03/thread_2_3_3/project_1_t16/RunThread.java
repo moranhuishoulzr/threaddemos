@@ -1,8 +1,8 @@
 package chapter02.section03.thread_2_3_3.project_1_t16;
 
 public class RunThread extends Thread {
-
-	volatile private boolean isRunning = true;
+//volatile
+	 private boolean isRunning = true;
 
 	public boolean isRunning() {
 		return isRunning;
@@ -14,10 +14,10 @@ public class RunThread extends Thread {
 
 	@Override
 	public void run() {
-		System.out.println("è¿›å…¥runäº†");
+		System.out.println("½øÈërunÁË");
 		while (isRunning == true) {
 		}
-		System.out.println("çº¿ç¨‹è¢«åœæ­¢äº†ï¼");
+		System.out.println("Ïß³Ì±»Í£Ö¹ÁË£¡");
 	}
 
 }
