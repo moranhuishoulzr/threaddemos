@@ -1,5 +1,5 @@
 package chapter03.section01.therad_3_1_5.project_1_waitInterruptException;
-
+//等待中的线程不可以被打断
 public class Test {
 
 	public static void main(String[] args) {
@@ -13,6 +13,7 @@ public class Test {
 			Thread.sleep(5000);
 
 			a.interrupt();
+
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}

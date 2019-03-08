@@ -1,6 +1,9 @@
 package chapter03.section01.therad_3_1_11.project_2_p_c_allWait;
 
-//生产者
+/**
+ * 比方说有生产者A和生产者B，缓冲区由于空了，消费者处于WAITING。生产者B处于WAITING，生产者A被消费者通知生产，生产者A生产出来的产品本应该通知消费者，结果通知了生产者B，生产者B被唤醒，发现缓冲区满了，于是继续WAITING。至此，两个生产者线程处于WAITING，消费者处于WAITING，系统假死
+ * 唤醒的应该是异类，有时候唤醒的却是同类，导致都在wating。。
+ */
 public class P {
 
 	private String lock;

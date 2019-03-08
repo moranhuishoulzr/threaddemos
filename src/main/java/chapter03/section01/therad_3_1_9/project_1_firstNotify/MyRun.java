@@ -6,7 +6,7 @@ public class MyRun {
 	private boolean isFirstRunB = false;
 
 	private Runnable runnableA = new Runnable() {
-		@Override
+
 		public void run() {
 			try {
 				synchronized (lock) {
@@ -23,7 +23,7 @@ public class MyRun {
 	};
 
 	private Runnable runnableB = new Runnable() {
-		@Override
+
 		public void run() {
 			synchronized (lock) {
 				System.out.println("begin notify");
@@ -39,13 +39,17 @@ public class MyRun {
 
 		MyRun run = new MyRun();
 
-		Thread a = new Thread(run.runnableA);
-		a.start();
+		Thread b = new Thread(run.runnableB);
+		b.start();
 
 		Thread.sleep(100);
 
-		Thread b = new Thread(run.runnableB);
-		b.start();
+		Thread a = new Thread(run.runnableA);
+		a.start();
+
+
+
+
 
 	}
 

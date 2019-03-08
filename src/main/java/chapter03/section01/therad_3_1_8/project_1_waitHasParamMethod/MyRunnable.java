@@ -3,7 +3,7 @@ package chapter03.section01.therad_3_1_8.project_1_waitHasParamMethod;
 public class MyRunnable {
 	static private Object lock = new Object();
 	static private Runnable runnable1 = new Runnable() {
-		@Override
+
 		public void run() {
 			try {
 				synchronized (lock) {
@@ -19,8 +19,8 @@ public class MyRunnable {
 		}
 	};
 
-	static private Runnable runnable2 = new Runnable() {
-		@Override
+	/*static private Runnable runnable2 = new Runnable() {
+
 		public void run() {
 			synchronized (lock) {
 				System.out.println("notify begin timer="
@@ -30,14 +30,14 @@ public class MyRunnable {
 						+ System.currentTimeMillis());
 			}
 		}
-	};
+	};*/
 
 	public static void main(String[] args) throws InterruptedException {
 		Thread t1 = new Thread(runnable1);
 		t1.start();
-		Thread.sleep(3000);
+		/*Thread.sleep(3000);
 		Thread t2 = new Thread(runnable2);
-		t2.start();
+		t2.start();*/
 	}
 
 }

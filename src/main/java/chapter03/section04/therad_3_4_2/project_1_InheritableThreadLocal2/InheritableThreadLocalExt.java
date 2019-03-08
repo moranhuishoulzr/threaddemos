@@ -12,4 +12,6 @@ public class InheritableThreadLocalExt extends InheritableThreadLocal {
 	protected Object childValue(Object parentValue) {
 		return parentValue + " 我在子线程加的~!";
 	}
+
+
 }

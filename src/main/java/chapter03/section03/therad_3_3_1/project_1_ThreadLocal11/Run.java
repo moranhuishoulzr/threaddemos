@@ -1,5 +1,8 @@
 package chapter03.section03.therad_3_3_1.project_1_ThreadLocal11;
 
+/**
+ * ThreadLocal解决的是变量在不同线程间的隔离性，也就是不同线程拥有自己的值，不同线程中的值是可以放入ThreadLocal保存的。
+ */
 public class Run {
 	public static ThreadLocal tl = new ThreadLocal();
 

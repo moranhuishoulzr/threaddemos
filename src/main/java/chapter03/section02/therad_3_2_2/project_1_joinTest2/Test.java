@@ -1,5 +1,8 @@
 package chapter03.section02.therad_3_2_2.project_1_joinTest2;
 
+/**
+ * jon()的作用就是优先执行，当前线程等待join()线程的执行后再执行
+ */
 public class Test {
 
 	public static void main(String[] args) {

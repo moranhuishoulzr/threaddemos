@@ -1,5 +1,5 @@
 package chapter03.section01.therad_3_1_3.project_1_test1;
-
+//wait()马上进入等待状态
 public class Test2 {
 
 	public static void main(String[] args) {

@@ -7,7 +7,7 @@ public class ThreadB extends Thread {
 		try {
 			System.out.println("   b run begin timer="
 					+ System.currentTimeMillis());
-			Thread.sleep(5000);
+			Thread.sleep(5000);//slepp会一直占用锁
 			System.out.println("   b run   end timer="
 					+ System.currentTimeMillis());
 		} catch (InterruptedException e) {

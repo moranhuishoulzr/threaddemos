@@ -1,5 +1,8 @@
 package chapter03.section04.therad_3_4_1.project_1_InheritableThreadLocal1;
 
+/**
+ * main主线程是A的父线程；InheritableThreadLocal用来获取父线程中的值
+ */
 public class Run {
 
 	public static void main(String[] args) {

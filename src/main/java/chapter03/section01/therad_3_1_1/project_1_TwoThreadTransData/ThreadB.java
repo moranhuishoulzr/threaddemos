@@ -13,6 +13,7 @@ public class ThreadB extends Thread {
 	public void run() {
 		try {
 			while (true) {
+				//=size=5的时候有可能捕捉不到，
 				if (list.size() == 5) {
 					System.out.println("==5了，线程b要退出了！");
 					throw new InterruptedException();

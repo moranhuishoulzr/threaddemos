@@ -1,5 +1,5 @@
 package chapter03.section01.therad_3_1_10.project_1_waitOld;
-
+//换成if就会出现错误，因为if得到锁后，第二个线程执行sub操作就会list溢出。
 public class Subtract {
 	
 	private String lock;
