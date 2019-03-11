@@ -13,7 +13,7 @@ public class Test1 {
 		Date runDate = calendarRef.getTime();
 		
 		MyTask task = new MyTask();
-		Timer timer = new Timer();
+		Timer timer = new Timer();//创建一个Timer就是创建一个新的线程
 		timer.schedule(task, runDate);
 		
 	}

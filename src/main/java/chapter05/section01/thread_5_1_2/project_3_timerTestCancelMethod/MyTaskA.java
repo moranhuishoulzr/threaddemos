@@ -7,7 +7,7 @@ public class MyTaskA extends TimerTask {
 	@Override
 	public void run() {
 		System.out.println("A run timer =" + new Date());
-		this.cancel();
+		this.cancel();//把自身任务从队列中清除
 		System.out.println("A 任務自己移除自己");
 	}
 }

@@ -7,9 +7,7 @@ public class ThreadA  extends Thread {
 		try {
 			while (!Thread.currentThread().isInterrupted()) {
 				System.out
-						.println("ThreadName=" + 
-								Thread.currentThread().
-								getName());
+						.println("ThreadName=" + Thread.currentThread().getName());
 				Thread.sleep(3000);
 			}
 		} catch (InterruptedException e) {

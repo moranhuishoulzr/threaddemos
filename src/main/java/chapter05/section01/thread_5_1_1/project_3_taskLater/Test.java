@@ -3,7 +3,9 @@ package chapter05.section01.thread_5_1_1.project_3_taskLater;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Timer;
-
+/**
+ * TimerTask是以队列的方式一个一个被顺序执行，所以执行的时间有可能和预期的时间不一致，因为前面的任务有可能消耗的时间更长，后面的任务被延迟
+ */
 
 public class Test {
 	public static void main(String[] args) {

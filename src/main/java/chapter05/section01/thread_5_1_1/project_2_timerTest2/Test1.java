@@ -4,7 +4,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Timer;
 
-
+//执行任务时间早于当前时间则立即执行
 public class Test1 {
 	
 	public static void main(String[] args) {

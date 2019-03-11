@@ -14,7 +14,7 @@ public class Test2 {
 		
 		MyTask task = new MyTask();
 		//守护线程
-		Timer timer = new Timer(true);
+		Timer timer = new Timer(true);//主线程执行完毕，守护线程消失，故不执行计划
 		timer.schedule(task, runDate);
 		
 	}

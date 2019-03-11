@@ -1,5 +1,8 @@
 package chapter06.section02.project_6_singleton_5;
 
+/**
+ * DCL 双检查锁机制是最常用的，能在一定程度加快代码的执行，当有一个线程检测到状态改变则其他线程可见，就不用执行最后的if了
+ */
 public class MyObject {
 	
 	private volatile static MyObject myObject;

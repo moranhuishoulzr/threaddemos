@@ -4,10 +4,12 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Timer;
 
+
 public class Test2 {
 	
 	public static void main(String[] args) {
 		System.out.println("当前时间为：" + new Date());
+
 		Calendar calendarRef1 = Calendar.getInstance();
 		calendarRef1.add(Calendar.SECOND, 10);
 		Date runDate1 = calendarRef1.getTime();

@@ -4,6 +4,10 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Timer;
 
+/**
+ * Timer的cancel()有时候不一定会停止执行计划任务，而是正常执行；
+ * 原因：cancel（）没有争抢到queue锁，所以继续运行
+ */
 public class Test {
 	
 	public static void main(String[] args) {
