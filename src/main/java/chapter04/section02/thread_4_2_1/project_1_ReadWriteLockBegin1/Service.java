@@ -9,7 +9,7 @@ public class Service {
 	public void read() {
 		try {
 			try {
-				lock.readLock().lock();
+				lock.readLock().lock();//读锁是共享的
 				System.out.println("获得读锁" + Thread.currentThread().getName()
 						+ " " + System.currentTimeMillis());
 				Thread.sleep(10000);

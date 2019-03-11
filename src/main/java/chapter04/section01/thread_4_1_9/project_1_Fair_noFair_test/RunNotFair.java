@@ -6,7 +6,7 @@ public class RunNotFair {
 		final Service service = new Service(false);
 
 		Runnable runnable = new Runnable() {
-			@Override
+
 			public void run() {
 				System.out.println("★线程" + Thread.currentThread().getName()
 						+ "运行了");

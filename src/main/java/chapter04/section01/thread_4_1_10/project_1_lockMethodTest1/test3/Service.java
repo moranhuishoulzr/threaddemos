@@ -23,7 +23,7 @@ public class Service {
 		try {
 			lock.lock();
 			System.out.println("有" + lock.getWaitQueueLength(newCondition)
-					+ "个线程正在等待newCondition");
+					+ "个线程正在等待newCondition");//返回等待此锁定给定相关的给定条件Condition的线程估计数。
 			newCondition.signal();
 		} finally {
 			lock.unlock();

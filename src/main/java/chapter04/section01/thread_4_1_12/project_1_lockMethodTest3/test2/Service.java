@@ -12,7 +12,7 @@ public class Service {
 
 	public void serviceMethod() {
 		try {
-			System.out.println(lock.isHeldByCurrentThread());
+			System.out.println(lock.isHeldByCurrentThread());//当前线程是否保持此锁
 			lock.lock();
 			System.out.println(lock.isHeldByCurrentThread());
 		} finally {

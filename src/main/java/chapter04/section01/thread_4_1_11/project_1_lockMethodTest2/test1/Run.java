@@ -6,23 +6,24 @@ public class Run {
 		final Service service = new Service();
 
 		Runnable runnable = new Runnable() {
-			@Override
 			public void run() {
 				service.waitMethod();
 			}
 		};
 
+		Thread threadB = new Thread(runnable);
+		threadB.start();
+		Thread.sleep(500);
 		Thread threadA = new Thread(runnable);
 		threadA.start();
 
-		Thread.sleep(500);
 
-		Thread threadB = new Thread(runnable);
-		threadB.start();
+
+
 
 		Thread.sleep(500);
-		System.out.println(service.lock.hasQueuedThread(threadA));
+		System.out.println(service.lock.hasQueuedThread(threadA));//特定线程是否等待此锁
 		System.out.println(service.lock.hasQueuedThread(threadB));
-		System.out.println(service.lock.hasQueuedThreads());
+		System.out.println(service.lock.hasQueuedThreads());//是否有线程等待此锁
 	}
 }

@@ -6,7 +6,7 @@ public class Run {
 		final MyService service = new MyService();
 
 		Runnable runnableRef = new Runnable() {
-			@Override
+
 			public void run() {
 				service.waitMethod();
 			}

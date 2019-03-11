@@ -10,7 +10,7 @@ public class MyService {
 
 	public void waitMethod() {
 		try {
-			lock.lockInterruptibly();
+			lock.lockInterruptibly();//当前线程未被中断则获得锁定，否则抛出异常
 			System.out.println("lock " + Thread.currentThread().getName());
 			for (int i = 0; i < Integer.MAX_VALUE / 10; i++) {
 				String newString = new String();

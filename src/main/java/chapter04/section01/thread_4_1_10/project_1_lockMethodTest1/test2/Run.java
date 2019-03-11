@@ -6,7 +6,7 @@ public class Run {
 		final Service service = new Service();
 
 		Runnable runnable = new Runnable() {
-			@Override
+
 			public void run() {
 				service.serviceMethod1();
 			}
@@ -20,7 +20,7 @@ public class Run {
 			threadArray[i].start();
 		}
 		Thread.sleep(2000);
-		System.out.println("有线程数：" + service.lock.getQueueLength() + "在等待获取锁！");
+		System.out.println("有线程数：" + service.lock.getQueueLength() + "在等待获取锁！");//等待此锁的线程数量
 
 	}
 }

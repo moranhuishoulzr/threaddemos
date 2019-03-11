@@ -8,7 +8,7 @@ public class Run {
 			MyThread myThread = new MyThread(service);
 			myThread.start();
 			Thread.sleep(3000);
-			myThread.interrupt();
+			myThread.interrupt();//中断等待中的线程会抛出异常
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}

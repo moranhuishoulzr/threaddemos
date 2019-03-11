@@ -9,7 +9,7 @@ public class Run {
 		ThreadA a = new ThreadA(service);
 		a.setName("A");
 		a.start();
-
+		//先读再写的操作是互斥的
 		Thread.sleep(1000);
 
 		ThreadB b = new ThreadB(service);

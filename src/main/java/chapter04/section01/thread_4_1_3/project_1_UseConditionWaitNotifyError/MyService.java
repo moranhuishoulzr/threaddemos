@@ -11,7 +11,7 @@ public class MyService {
 
 	public void await() {
 		try {
-			condition.await();
+			condition.await();//condition.await();调用之前必须有lock.lock()
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}

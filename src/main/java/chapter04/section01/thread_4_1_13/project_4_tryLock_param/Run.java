@@ -7,7 +7,7 @@ public class Run {
 		final MyService service = new MyService();
 
 		Runnable runnableRef = new Runnable() {
-			@Override
+
 			public void run() {
 				System.out.println(Thread.currentThread().getName()
 						+ "调用waitMethod时间：" + System.currentTimeMillis());

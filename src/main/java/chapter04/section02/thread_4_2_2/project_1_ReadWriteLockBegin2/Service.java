@@ -9,7 +9,7 @@ public class Service {
 	public void write() {
 		try {
 			try {
-				lock.writeLock().lock();
+				lock.writeLock().lock();//写锁是排斥的
 				System.out.println("获得写锁" + Thread.currentThread().getName()
 						+ " " + System.currentTimeMillis());
 				Thread.sleep(10000);

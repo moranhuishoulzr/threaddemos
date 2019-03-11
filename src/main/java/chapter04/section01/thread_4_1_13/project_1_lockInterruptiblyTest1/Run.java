@@ -1,12 +1,21 @@
 package chapter04.section01.thread_4_1_13.project_1_lockInterruptiblyTest1;
 
+/**
+ * 打印结果
+ * lock begin A
+ * main end!
+ * lock   end A
+ * lock begin B
+ * lock   end
+ * 线程正常执行
+ */
 
 public class Run {
 
 	public static void main(String[] args) throws InterruptedException {
 		final MyService service = new MyService();
 		Runnable runnableRef = new Runnable() {
-			@Override
+
 			public void run() {
 				service.waitMethod();
 			}

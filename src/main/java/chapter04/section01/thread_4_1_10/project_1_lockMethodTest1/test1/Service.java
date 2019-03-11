@@ -10,7 +10,7 @@ public class Service {
 		try {
 			lock.lock();
 			System.out.println("serviceMethod1 getHoldCount="
-					+ lock.getHoldCount());
+					+ lock.getHoldCount());//查询当前线程保持此锁定的个数，也就是调用lock()方法的次数
 			serviceMethod2();
 		} finally {
 			lock.unlock();

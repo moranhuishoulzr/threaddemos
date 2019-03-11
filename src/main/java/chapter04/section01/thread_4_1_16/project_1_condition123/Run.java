@@ -4,7 +4,9 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class Run {
-
+	/**
+	 * 多Condition实现线程的顺序执行，把自己等待的条件设置在前
+	 */
 	volatile private static int nextPrintWho = 1;
 	private static ReentrantLock lock = new ReentrantLock();
 	final private static Condition conditionA = lock.newCondition();

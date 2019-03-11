@@ -13,7 +13,7 @@ public class Service {
 
 	public void serviceMethod() {
 		try {
-			System.out.println(lock.isLocked());
+			System.out.println(lock.isLocked());//此锁是否由线程占用（任何线程）
 			lock.lock();
 			System.out.println(lock.isLocked());
 		} finally {

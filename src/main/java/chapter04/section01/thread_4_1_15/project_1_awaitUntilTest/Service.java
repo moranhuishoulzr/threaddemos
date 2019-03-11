@@ -4,6 +4,9 @@ import java.util.Calendar;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
+/**
+ * condition.awaitUntil(Date deadline)在等待时间之内可以被其它线程唤醒，等待时间一过该线程会自动唤醒，和别的线程争抢锁资源
+ */
 public class Service {
 
 	private ReentrantLock lock = new ReentrantLock();
@@ -16,7 +19,7 @@ public class Service {
 			lock.lock();
 			System.out
 					.println("wait begin timer=" + System.currentTimeMillis());
-			condition.awaitUntil(calendarRef.getTime());
+			condition.awaitUntil(calendarRef.getTime());//等待过程中会释放锁
 			System.out
 					.println("wait   end timer=" + System.currentTimeMillis());
 		} catch (InterruptedException e) {

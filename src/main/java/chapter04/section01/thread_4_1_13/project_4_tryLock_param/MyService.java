@@ -9,7 +9,7 @@ public class MyService {
 
 	public void waitMethod() {
 		try {
-			if (lock.tryLock(3, TimeUnit.SECONDS)) {
+			if (lock.tryLock(11, TimeUnit.SECONDS)) {//如果锁在给定等待时间内没有被另一个线程保持，且当前线程未被中断，则获取该锁定
 				System.out.println("      " + Thread.currentThread().getName()
 						+ "获得锁的时间：" + System.currentTimeMillis());
 				Thread.sleep(10000);
