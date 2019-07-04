@@ -16,7 +16,7 @@ public class Run {
 
 		Thread.sleep(3000);
 
-		service.signalAll_A();
+		service.signalAll_A();//locak创建了两个钥匙 ConditionA ConditionB     用哪个condition  await就用哪个notify。
 
 	}
 

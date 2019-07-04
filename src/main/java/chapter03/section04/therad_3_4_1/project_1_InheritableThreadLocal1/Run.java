@@ -1,14 +1,16 @@
 package chapter03.section04.therad_3_4_1.project_1_InheritableThreadLocal1;
 
 /**
- * mainä¸»çº¿ç¨‹æ˜¯Açš„çˆ¶çº¿ç¨‹ï¼›InheritableThreadLocalç”¨æ¥è·å–çˆ¶çº¿ç¨‹ä¸­çš„å€¼
+ * mainÖ÷Ïß³ÌÊÇAµÄ¸¸Ïß³Ì£»InheritableThreadLocalÓÃÀ´»ñÈ¡¸¸Ïß³ÌÖĞµÄÖµ
+ * ThreadLocal×ÓÏß³ÌºÍÖ÷Ïß³Ì¸÷ÓĞ¸÷µÄÖµ
+ * InheritableThreadLocalÊÇ×ÓÏß³Ì»ñÈ¡¸¸Ïß³ÌµÄÖµ
  */
 public class Run {
 
 	public static void main(String[] args) {
 		try {
 			for (int i = 0; i < 10; i++) {
-				System.out.println("       åœ¨Mainçº¿ç¨‹ä¸­å–å€¼=" + Tools.tl.get());
+				System.out.println("       ÔÚMainÏß³ÌÖĞÈ¡Öµ=" + Tools.tl.get());
 				Thread.sleep(100);
 			}
 			Thread.sleep(5000);

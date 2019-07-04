@@ -3,7 +3,7 @@ package chapter04.section01.thread_4_1_5.project_1_MustUseMoreCondition_Error;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
-
+//lock¿ØÖÆµÄ²»ÊÇÍ¬Ò»°ÑËøÂð£¿ÎªÊ²Ã´Á½¸ö·½·¨¿ÉÒÔÍ¬Ê±½øÈë£¿£¿£¿£¿£¿£¿£¿£¿£¿£¿£¿£¿£¿
 public class MyService {
 
 	private Lock lock = new ReentrantLock();
@@ -12,10 +12,10 @@ public class MyService {
 	public void awaitA() {
 		try {
 			lock.lock();
-			System.out.println("begin awaitAæ—¶é—´ä¸º" + System.currentTimeMillis()
+			System.out.println("begin awaitAÊ±¼äÎª" + System.currentTimeMillis()
 					+ " ThreadName=" + Thread.currentThread().getName());
 			condition.await();
-			System.out.println("  end awaitAæ—¶é—´ä¸º" + System.currentTimeMillis()
+			System.out.println("  end awaitAÊ±¼äÎª" + System.currentTimeMillis()
 					+ " ThreadName=" + Thread.currentThread().getName());
 		} catch (InterruptedException e) {
 			e.printStackTrace();
@@ -27,10 +27,10 @@ public class MyService {
 	public void awaitB() {
 		try {
 			lock.lock();
-			System.out.println("begin awaitBæ—¶é—´ä¸º" + System.currentTimeMillis()
+			System.out.println("begin awaitBÊ±¼äÎª" + System.currentTimeMillis()
 					+ " ThreadName=" + Thread.currentThread().getName());
 			condition.await();
-			System.out.println("  end awaitBæ—¶é—´ä¸º" + System.currentTimeMillis()
+			System.out.println("  end awaitBÊ±¼äÎª" + System.currentTimeMillis()
 					+ " ThreadName=" + Thread.currentThread().getName());
 		} catch (InterruptedException e) {
 			e.printStackTrace();
@@ -42,7 +42,7 @@ public class MyService {
 	public void signalAll() {
 		try {
 			lock.lock();
-			System.out.println("  signalAllæ—¶é—´ä¸º" + System.currentTimeMillis()
+			System.out.println("  signalAllÊ±¼äÎª" + System.currentTimeMillis()
 					+ " ThreadName=" + Thread.currentThread().getName());
 			condition.signalAll();
 		} finally {

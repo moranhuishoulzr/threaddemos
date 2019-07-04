@@ -3,6 +3,6 @@ package chapter03.section03.therad_3_3_3.project_1_ThreadLocal22;
 public class ThreadLocalExt extends ThreadLocal {
 	@Override
 	protected Object initialValue() {
-		return "æˆ‘æ˜¯é»˜è®¤å€¼ ç¬¬ä¸€æ¬¡getä¸å†ä¸ºnull";
+		return "ÎÒÊÇÄ¬ÈÏÖµ µÚÒ»´Îget²»ÔÙÎªnull";
 	}
 }

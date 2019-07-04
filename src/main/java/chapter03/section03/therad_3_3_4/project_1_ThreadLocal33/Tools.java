@@ -1,7 +1,7 @@
 package chapter03.section03.therad_3_3_4.project_1_ThreadLocal33;
 
 /**
- * ä¸é€šçš„çº¿ç¨‹æ‰§è¡Œï¼Œä¼šæ‹¥æœ‰ä¸é€šçš„å€¼
+ * ²»Í¨µÄÏß³ÌÖ´ĞĞ£¬»áÓµÓĞ²»Í¨µÄÖµ
  */
 public class Tools {
 	public static ThreadLocalExt tl = new ThreadLocalExt();

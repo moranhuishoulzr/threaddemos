@@ -5,8 +5,8 @@ public class Run {
 
 	public static void main(String[] args) {
 		if (tl.get() == null) {
-			System.out.println("从未放过值");
-			tl.set("我的值");
+			System.out.println("��δ�Ź�ֵ");
+			tl.set("�ҵ�ֵ");
 		}
 		System.out.println(tl.get());
 		System.out.println(tl.get());

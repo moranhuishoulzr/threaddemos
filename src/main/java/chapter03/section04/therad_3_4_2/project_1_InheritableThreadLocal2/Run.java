@@ -1,14 +1,14 @@
 package chapter03.section04.therad_3_4_2.project_1_InheritableThreadLocal2;
 
 /**
- * å­çº¿ç¨‹åœ¨è·å–å€¼å¾—æ—¶å€™ï¼Œmainçº¿ç¨‹å¦‚æœæ›´æ”¹ï¼Œåˆ™å­çº¿ç¨‹è·å–çš„ä»æ—§æ˜¯æ—§å€¼
+ * ×ÓÏß³ÌÔÚ»ñÈ¡ÖµµÃÊ±ºò£¬mainÏß³ÌÈç¹û¸ü¸Ä£¬Ôò×ÓÏß³Ì»ñÈ¡µÄÈÔ¾ÉÊÇ¾ÉÖµ
  */
 public class Run {
 
 	public static void main(String[] args) {
 		try {
 			for (int i = 0; i < 10; i++) {
-				System.out.println("       åœ¨Mainçº¿ç¨‹ä¸­å–å€¼=" + Tools.tl.get());
+				System.out.println("       ÔÚMainÏß³ÌÖĞÈ¡Öµ=" + Tools.tl.get());
 				Thread.sleep(100);
 			}
 			Thread.sleep(5000);

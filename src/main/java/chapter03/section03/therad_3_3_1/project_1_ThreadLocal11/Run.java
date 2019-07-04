@@ -1,15 +1,16 @@
 package chapter03.section03.therad_3_3_1.project_1_ThreadLocal11;
 
 /**
- * ThreadLocalè§£å†³çš„æ˜¯å˜é‡åœ¨ä¸åŒçº¿ç¨‹é—´çš„éš”ç¦»æ€§ï¼Œä¹Ÿå°±æ˜¯ä¸åŒçº¿ç¨‹æ‹¥æœ‰è‡ªå·±çš„å€¼ï¼Œä¸åŒçº¿ç¨‹ä¸­çš„å€¼æ˜¯å¯ä»¥æ”¾å…¥ThreadLocalä¿å­˜çš„ã€‚
+ * ThreadLocal½â¾öµÄÊÇ±äÁ¿ÔÚ²»Í¬Ïß³Ì¼äµÄ¸ôÀëĞÔ£¬Ò²¾ÍÊÇ²»Í¬Ïß³ÌÓµÓĞ×Ô¼ºµÄÖµ£¬²»Í¬Ïß³ÌÖĞµÄÖµÊÇ¿ÉÒÔ·ÅÈëThreadLocal±£´æµÄ¡£
  */
 public class Run {
 	public static ThreadLocal tl = new ThreadLocal();
 
 	public static void main(String[] args) {
 		if (tl.get() == null) {
-			System.out.println("ä»æœªæ”¾è¿‡å€¼");
-			tl.set("æˆ‘çš„å€¼");
+			System.out.println("´ÓÎ´·Å¹ıÖµ");
+			tl.set("ÎÒµÄÖµ");
+			tl.set("...");//Ö»ÄÜ·ÅÒ»¸öÖµÂğ£¿ºóÀ´µÄ»á°ÑÖ®Ç°µÄ¸²¸Ç
 		}
 		System.out.println(tl.get());
 		System.out.println(tl.get());

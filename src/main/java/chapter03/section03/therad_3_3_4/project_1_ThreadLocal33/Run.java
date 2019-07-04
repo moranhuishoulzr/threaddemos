@@ -1,11 +1,11 @@
 package chapter03.section03.therad_3_3_4.project_1_ThreadLocal33;
 
 public class Run {
-
+//×ÓÏß³ÌºÍ¸¸Ïß³Ì¸÷ÓÐ¸÷µÄÖµ
 	public static void main(String[] args) {
 		try {
 			for (int i = 0; i < 10; i++) {
-				System.out.println("       åœ¨Mainçº¿ç¨‹ä¸­å–å€¼=" + Tools.tl.get());
+				System.out.println("       ÔÚMainÏß³ÌÖÐÈ¡Öµ=" + Tools.tl.get());
 				Thread.sleep(100);
 			}
 			Thread.sleep(5000);

@@ -7,6 +7,7 @@ public class MyService {
 	private ReentrantLock lock = new ReentrantLock();
 	private Condition condition = lock.newCondition();
 
+
 	public void waitMethod() {
 		try {
 			lock.lock();

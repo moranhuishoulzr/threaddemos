@@ -4,6 +4,9 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+/**
+ * condition.await();   condition.signal();±ØÐëÔÚlock¿éÖÐ¡£
+ */
 public class MyService {
 
 	private Lock lock = new ReentrantLock();
@@ -12,7 +15,7 @@ public class MyService {
 	public void await() {
 		try {
 			lock.lock();
-			System.out.println(" awaitæ—¶é—´ä¸º" + System.currentTimeMillis());
+			System.out.println(" awaitÊ±¼äÎª" + System.currentTimeMillis());
 			condition.await();
 		} catch (InterruptedException e) {
 			e.printStackTrace();
@@ -24,7 +27,7 @@ public class MyService {
 	public void signal() {
 		try {
 			lock.lock();
-			System.out.println("signalæ—¶é—´ä¸º" + System.currentTimeMillis());
+			System.out.println("signalÊ±¼äÎª" + System.currentTimeMillis());
 			condition.signal();
 		} finally {
 			lock.unlock();

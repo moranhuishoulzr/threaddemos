@@ -10,7 +10,7 @@ public class InheritableThreadLocalExt extends InheritableThreadLocal {
 
 	@Override
 	protected Object childValue(Object parentValue) {
-		return parentValue + " 鎴戝湪瀛愮嚎绋嬪姞鐨剘!";
+		return parentValue + " 我在子线程加的";
 	}
 
 
