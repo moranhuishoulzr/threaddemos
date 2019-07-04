@@ -1,7 +1,7 @@
 package chapter03.section02.therad_3_2_2.project_1_joinTest2;
 
 /**
- * jon()çš„ä½œç”¨å°±æ˜¯ä¼˜å…ˆæ‰§è¡Œï¼Œå½“å‰çº¿ç¨‹ç­‰å¾…join()çº¿ç¨‹çš„æ‰§è¡Œåå†æ‰§è¡Œ
+ * jon()µÄ×÷ÓÃ¾ÍÊÇÓÅÏÈÖ´ĞĞ£¬µ±Ç°Ïß³ÌµÈ´ıjoin()Ïß³ÌµÄÖ´ĞĞºóÔÙÖ´ĞĞ
  */
 public class Test {
 
@@ -11,7 +11,7 @@ public class Test {
 			threadTest.start();
 			threadTest.join();
 
-			System.out.println("æˆ‘æƒ³å½“threadTestå¯¹è±¡æ‰§è¡Œå®Œæ¯•åæˆ‘å†æ‰§è¡Œï¼Œæˆ‘åšåˆ°äº†");
+			System.out.println("ÎÒÏëµ±threadTest¶ÔÏóÖ´ĞĞÍê±ÏºóÎÒÔÙÖ´ĞĞ£¬ÎÒ×öµ½ÁË");
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}

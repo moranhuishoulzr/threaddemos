@@ -12,7 +12,7 @@ public class MyStack {
 				this.wait();
 			}
 			list.add("anyString=" + Math.random());
-			this.notifyAll();
+			this.notifyAll();//会唤起所有消费者，不会造成假死
 			System.out.println("push=" + list.size());
 		} catch (InterruptedException e) {
 			e.printStackTrace();

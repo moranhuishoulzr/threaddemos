@@ -1,5 +1,5 @@
 package chapter01.section07.thread_1_7_3.project_3_t13_1;
-
+//通过异常来终止线程
 public class MyThread extends Thread {
 	@Override
 	public void run() {

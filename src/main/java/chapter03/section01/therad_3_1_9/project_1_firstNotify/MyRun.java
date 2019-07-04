@@ -29,7 +29,7 @@ public class MyRun {
 				System.out.println("begin notify");
 				lock.notify();
 				System.out.println("end notify");
-				isFirstRunB = true;
+				//isFirstRunB = true;
 
 			}
 		}
@@ -41,9 +41,7 @@ public class MyRun {
 
 		Thread b = new Thread(run.runnableB);
 		b.start();
-
 		Thread.sleep(100);
-
 		Thread a = new Thread(run.runnableA);
 		a.start();
 

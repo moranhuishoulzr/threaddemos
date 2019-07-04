@@ -16,7 +16,7 @@ public class Run1 {
 		b.setName("B");
 
 		a.start();
-		Thread.sleep(50);// ����50����
+		Thread.sleep(50);// 睡眠的这段时间，锁已经改变不是和上一个线程使用一样的锁
 		b.start();
 	}
 }

@@ -1,6 +1,6 @@
 package chapter03.section01.therad_3_1_11.project_2_p_c_allWait;
 
-//æ¶ˆè´¹è€…
+//Ïû·ÑÕß
 public class C {
 
 	private String lock;
@@ -14,12 +14,12 @@ public class C {
 		try {
 			synchronized (lock) {
 				while (ValueObject.value.equals("")) {
-					System.out.println("æ¶ˆè´¹è€… "
-							+ Thread.currentThread().getName() + " WAITINGäº†â˜†");
+					System.out.println("Ïû·ÑÕß "
+							+ Thread.currentThread().getName() + " WAITINGÁË¡î");
 					lock.wait();
 				}
-				System.out.println("æ¶ˆè´¹è€… " + Thread.currentThread().getName()
-						+ " RUNNABLEäº†");
+				System.out.println("Ïû·ÑÕß " + Thread.currentThread().getName()
+						+ " RUNNABLEÁË");
 				ValueObject.value = "";
 				lock.notify();
 			}

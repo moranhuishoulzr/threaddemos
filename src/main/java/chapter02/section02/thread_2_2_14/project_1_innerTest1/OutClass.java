@@ -4,7 +4,7 @@ public class OutClass {
 
 	static class Inner {
 		public void method1() {
-			synchronized ("��������") {
+			synchronized ("其他的类") {
 				for (int i = 1; i <= 10; i++) {
 					System.out.println(Thread.currentThread().getName() + " i="
 							+ i);

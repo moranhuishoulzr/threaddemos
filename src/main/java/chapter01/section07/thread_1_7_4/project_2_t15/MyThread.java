@@ -1,5 +1,5 @@
 package chapter01.section07.thread_1_7_4.project_2_t15;
-
+//中断状态下进入睡眠也会触发异常的
 public class MyThread extends Thread {
 	@Override
 	public void run() {

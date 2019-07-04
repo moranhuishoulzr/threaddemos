@@ -23,8 +23,8 @@ public class MyStack {
 		String returnValue = "";
 		try {
 			if (list.size() == 0) {
-				System.out.println("pop操作中的："
-						+ Thread.currentThread().getName() + " 线程呈wait状态");
+				System.out.println("pop�����еģ�"
+						+ Thread.currentThread().getName() + " �̳߳�wait״̬");
 				this.wait();
 			}
 			returnValue = "" + list.get(0);

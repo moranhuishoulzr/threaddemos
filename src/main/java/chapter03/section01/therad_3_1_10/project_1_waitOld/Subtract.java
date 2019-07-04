@@ -12,7 +12,7 @@ public class Subtract {
 	public void subtract() {
 		try {
 			synchronized (lock) {
-				while (ValueObject.list.size() == 0) {
+				if (ValueObject.list.size() == 0) {//如果是if就会报错，换成while就不会报错。
 					System.out.println("wait begin ThreadName="
 							+ Thread.currentThread().getName());
 					lock.wait();

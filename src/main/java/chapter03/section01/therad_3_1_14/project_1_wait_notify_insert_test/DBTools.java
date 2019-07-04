@@ -2,7 +2,7 @@ package chapter03.section01.therad_3_1_14.project_1_wait_notify_insert_test;
 
 public class DBTools {
 
-	volatile private boolean prevIsA = false;
+	volatile private boolean prevIsA = false;//Ò»¸ö¿ª¹ØÊµÏÖ½»ÌæÏß³ÌÔËĞĞ
 
 	synchronized public void backupA() {
 		try {
@@ -10,7 +10,7 @@ public class DBTools {
 				wait();
 			}
 			for (int i = 0; i < 5; i++) {
-				System.out.println("â˜…â˜…â˜…â˜…â˜…");
+				System.out.println("¡ï¡ï¡ï¡ï¡ï");
 			}
 			prevIsA = true;
 			notifyAll();
@@ -25,7 +25,7 @@ public class DBTools {
 				wait();
 			}
 			for (int i = 0; i < 5; i++) {
-				System.out.println("â˜†â˜†â˜†â˜†â˜†");
+				System.out.println("¡î¡î¡î¡î¡î");
 			}
 			prevIsA = false;
 			notifyAll();

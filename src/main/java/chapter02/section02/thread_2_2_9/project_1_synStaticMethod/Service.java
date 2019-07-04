@@ -1,5 +1,5 @@
 package chapter02.section02.thread_2_2_9.project_1_synStaticMethod;
-
+//类锁会互斥
 public class Service {
 
 	synchronized public static void printA() {

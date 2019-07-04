@@ -15,7 +15,8 @@ public class ThreadA extends Thread {
 			synchronized (b) {
 				b.start();
 				Thread.sleep(6000);
-				// Thread.sleep()涓嶉噴鏀鹃攣
+				System.out.println("A睡眠完成。。");
+				// Thread.sleep()不释放锁
 			}
 		} catch (InterruptedException e) {
 			e.printStackTrace();

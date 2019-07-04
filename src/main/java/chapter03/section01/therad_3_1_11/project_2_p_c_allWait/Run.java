@@ -13,10 +13,10 @@ public class Run {
 
 		for (int i = 0; i < 2; i++) {
 			pThread[i] = new ThreadP(p);
-			pThread[i].setName("ç”Ÿäº§è€…" + (i + 1));
+			pThread[i].setName("Éú²úÕß" + (i + 1));
 
 			rThread[i] = new ThreadC(r);
-			rThread[i].setName("æ¶ˆè´¹è€…" + (i + 1));
+			rThread[i].setName("Ïû·ÑÕß" + (i + 1));
 
 			pThread[i].start();
 			rThread[i].start();

@@ -22,7 +22,5 @@ public class Run {
 		ThreadAdd addThread = new ThreadAdd(add);
 		addThread.setName("addThread");
 		addThread.start();
-
 	}
-
 }

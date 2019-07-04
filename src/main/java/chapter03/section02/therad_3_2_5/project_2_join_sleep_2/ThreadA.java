@@ -14,7 +14,7 @@ public class ThreadA extends Thread {
 		try {
 			synchronized (b) {
 				b.start();
-				b.join();// 璇存槑join閲婃斁閿佷簡
+				b.join();// 说明join释放锁了
 				for (int i = 0; i < Integer.MAX_VALUE; i++) {
 					String newString = new String();
 					Math.random();

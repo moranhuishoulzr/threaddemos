@@ -4,15 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * ifä¼šå‡ºç°å¼‚å¸¸ï¼Œå› ä¸ºwaitçŠ¶æ€è¢«å”¤é†’ï¼Œç»§è€Œç»§ç»­æ‰§è¡Œä¸‹é¢ä»£ç ï¼Œä½†æ˜¯å·²ä¸æ»¡è¶³æ¡ä»¶ï¼›whileå¯ä»¥é‡æ–°æ‰§è¡Œæ£€æŸ¥æ¡ä»¶ã€‚
+ * if»á³öÏÖÒì³££¬ÒòÎªwait×´Ì¬±»»½ĞÑ£¬¼Ì¶ø¼ÌĞøÖ´ĞĞÏÂÃæ´úÂë£¬µ«ÊÇÒÑ²»Âú×ãÌõ¼ş£»while¿ÉÒÔÖØĞÂÖ´ĞĞ¼ì²éÌõ¼ş¡£
  */
 public class MyStack {
 	private List list = new ArrayList();
 
 	synchronized public void push() {
 		try {
-			if (list.size() == 1) {
-				this.wait();
+			if (list.size() == 1) {//if»áÔì³ÉÔàÊı¾İ£¬while²»»á
+				this.wait();//wait»áÊÍ·ÅËø£¬ËùÒÔÆäËûµÄÏß³ÌÒ²¿ÉÒÔ½øµ½Õâ¸ö·½·¨À´
 			}
 			list.add("anyString=" + Math.random());
 			this.notify();
@@ -26,8 +26,8 @@ public class MyStack {
 		String returnValue = "";
 		try {
 			if (list.size() == 0) {
-				System.out.println("popæ“ä½œä¸­çš„ï¼š"
-						+ Thread.currentThread().getName() + " çº¿ç¨‹å‘ˆwaitçŠ¶æ€");
+				System.out.println("pop²Ù×÷ÖĞµÄ£º"
+						+ Thread.currentThread().getName() + " Ïß³Ì³Êwait×´Ì¬");
 				this.wait();
 			}
 			returnValue = "" + list.get(0);

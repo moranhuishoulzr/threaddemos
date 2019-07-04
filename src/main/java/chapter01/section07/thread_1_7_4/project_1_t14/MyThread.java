@@ -1,5 +1,5 @@
 package chapter01.section07.thread_1_7_4.project_1_t14;
-
+//sleep()睡眠中被中断会触发异常，并清除中断状态值
 public class MyThread extends Thread {
 	@Override
 	public void run() {

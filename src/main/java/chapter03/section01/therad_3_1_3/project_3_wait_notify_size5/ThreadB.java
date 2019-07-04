@@ -21,7 +21,7 @@ public class ThreadB extends Thread {
 					System.out.println("添加了" + (i + 1) + "个元素!");
 					Thread.sleep(1000);
 				}
-			}
+			}//同步块执行完毕才释放锁
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}

@@ -7,7 +7,7 @@ public class ThreadB extends Thread {
 		try {
 			System.out.println("   b run begin timer="
 					+ System.currentTimeMillis());
-			Thread.sleep(5000);//slepp浼氫竴鐩村崰鐢ㄩ攣
+			Thread.sleep(5000);//slepp会一直占用锁
 			System.out.println("   b run   end timer="
 					+ System.currentTimeMillis());
 		} catch (InterruptedException e) {
@@ -16,7 +16,7 @@ public class ThreadB extends Thread {
 	}
 
 	synchronized public void bService() {
-		System.out.println("鎵撳嵃浜哹Service timer=" + System.currentTimeMillis());
+		System.out.println("打印了bService timer=" + System.currentTimeMillis());
 	}
 
 }

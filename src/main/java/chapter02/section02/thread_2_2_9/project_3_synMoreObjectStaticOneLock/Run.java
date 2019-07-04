@@ -2,6 +2,7 @@ package chapter02.section02.thread_2_2_9.project_3_synMoreObjectStaticOneLock;
 
 /**
  * 都是用的类锁，会互相排斥
+ * 类锁方法无论使用几个对象都构成同步互斥
  */
 public class Run {
 

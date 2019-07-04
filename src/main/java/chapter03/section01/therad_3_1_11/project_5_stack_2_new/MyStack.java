@@ -2,7 +2,7 @@ package chapter03.section01.therad_3_1_11.project_5_stack_2_new;
 
 import java.util.ArrayList;
 import java.util.List;
-
+//Ò»Éú²ú£¬¶àÏû·Ñ   notify»áÔì³É¼ÙËÀ
 public class MyStack {
 	private List list = new ArrayList();
 
@@ -12,7 +12,7 @@ public class MyStack {
 				this.wait();
 			}
 			list.add("anyString=" + Math.random());
-			this.notify();
+			this.notify();//Ö»ÄÜ»½ÆğÒ»¸öÏß³Ì£¬Ôì³É¼ÙËÀ
 			System.out.println("push=" + list.size());
 		} catch (InterruptedException e) {
 			e.printStackTrace();
@@ -23,8 +23,8 @@ public class MyStack {
 		String returnValue = "";
 		try {
 			while (list.size() == 0) {
-				System.out.println("popæ“ä½œä¸­çš„ï¼š"
-						+ Thread.currentThread().getName() + " çº¿ç¨‹å‘ˆwaitçŠ¶æ€");
+				System.out.println("pop²Ù×÷ÖĞµÄ£º"
+						+ Thread.currentThread().getName() + " Ïß³Ì³Êwait×´Ì¬");
 				this.wait();
 			}
 			returnValue = "" + list.get(0);

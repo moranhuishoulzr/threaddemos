@@ -1,5 +1,5 @@
 package chapter02.section02.thread_2_2_9.project_2_synTwoLock;
-
+//类锁方法和对象锁方法不构成同步互斥，是不同的锁。
 public class Service {
 
 	synchronized public static void printA() {

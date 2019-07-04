@@ -13,7 +13,7 @@ public class MyThread1 extends Thread {
 		try {
 			synchronized (lock) {
 				System.out.println("开始      wait time=" + System.currentTimeMillis());
-				lock.wait();
+				lock.wait();//这里会释放锁
 				System.out.println("结束      wait time=" + System.currentTimeMillis());
 			}
 		} catch (InterruptedException e) {

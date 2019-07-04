@@ -7,10 +7,11 @@ public class MyThread extends Thread {
 		long beginTime = System.currentTimeMillis();
 		int count = 0;
 		for (int i = 0; i < 50000000; i++) {
-			//Thread.yield();
+			Thread.yield();//让出CPU导致运行变慢，但是啥时候让出的是不确定的
 			count = count + (i + 1);
 		}
 		long endTime = System.currentTimeMillis();
+		System.out.println("count:"+count);
 		System.out.println("用时：" + (endTime - beginTime) + "毫秒！");
 	}
 

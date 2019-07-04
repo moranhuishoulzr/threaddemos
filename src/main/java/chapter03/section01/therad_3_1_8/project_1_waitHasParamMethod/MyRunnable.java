@@ -1,5 +1,5 @@
 package chapter03.section01.therad_3_1_8.project_1_waitHasParamMethod;
-
+//带时间的wait，释放锁睡眠。
 public class MyRunnable {
 	static private Object lock = new Object();
 	static private Runnable runnable1 = new Runnable() {

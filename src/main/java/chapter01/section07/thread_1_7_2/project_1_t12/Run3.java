@@ -1,7 +1,7 @@
 package chapter01.section07.thread_1_7_2.project_1_t12;
 
 /**
- * 正常情况都是true,为何打印出来都是false呢。书上也写着都是true呢。
+ * 正常情况下是为true，但是打印出来为false。原因：线程执行完了，所以为false。
  */
 public class Run3 {
 	

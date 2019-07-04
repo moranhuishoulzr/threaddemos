@@ -14,6 +14,6 @@ public class MyThread2 extends Thread {
 			System.out.println("开始notify time=" + System.currentTimeMillis());
 			lock.notify();
 			System.out.println("结束notify time=" + System.currentTimeMillis());
-		}
+		}//同步块结束才会释放锁
 	}
 }

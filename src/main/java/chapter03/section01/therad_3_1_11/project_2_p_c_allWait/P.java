@@ -1,8 +1,8 @@
 package chapter03.section01.therad_3_1_11.project_2_p_c_allWait;
 
 /**
- * æ¯”æ–¹è¯´æœ‰ç”Ÿäº§è€…Aå’Œç”Ÿäº§è€…Bï¼Œç¼“å†²åŒºç”±äºç©ºäº†ï¼Œæ¶ˆè´¹è€…å¤„äºWAITINGã€‚ç”Ÿäº§è€…Bå¤„äºWAITINGï¼Œç”Ÿäº§è€…Aè¢«æ¶ˆè´¹è€…é€šçŸ¥ç”Ÿäº§ï¼Œç”Ÿäº§è€…Aç”Ÿäº§å‡ºæ¥çš„äº§å“æœ¬åº”è¯¥é€šçŸ¥æ¶ˆè´¹è€…ï¼Œç»“æœé€šçŸ¥äº†ç”Ÿäº§è€…Bï¼Œç”Ÿäº§è€…Bè¢«å”¤é†’ï¼Œå‘ç°ç¼“å†²åŒºæ»¡äº†ï¼Œäºæ˜¯ç»§ç»­WAITINGã€‚è‡³æ­¤ï¼Œä¸¤ä¸ªç”Ÿäº§è€…çº¿ç¨‹å¤„äºWAITINGï¼Œæ¶ˆè´¹è€…å¤„äºWAITINGï¼Œç³»ç»Ÿå‡æ­»
- * å”¤é†’çš„åº”è¯¥æ˜¯å¼‚ç±»ï¼Œæœ‰æ—¶å€™å”¤é†’çš„å´æ˜¯åŒç±»ï¼Œå¯¼è‡´éƒ½åœ¨watingã€‚ã€‚
+ * ±È·½ËµÓĞÉú²úÕßAºÍÉú²úÕßB£¬»º³åÇøÓÉÓÚ¿ÕÁË£¬Ïû·ÑÕß´¦ÓÚWAITING¡£Éú²úÕßB´¦ÓÚWAITING£¬Éú²úÕßA±»Ïû·ÑÕßÍ¨ÖªÉú²ú£¬Éú²úÕßAÉú²ú³öÀ´µÄ²úÆ·±¾Ó¦¸ÃÍ¨ÖªÏû·ÑÕß£¬½á¹ûÍ¨ÖªÁËÉú²úÕßB£¬Éú²úÕßB±»»½ĞÑ£¬·¢ÏÖ»º³åÇøÂúÁË£¬ÓÚÊÇ¼ÌĞøWAITING¡£ÖÁ´Ë£¬Á½¸öÉú²úÕßÏß³Ì´¦ÓÚWAITING£¬Ïû·ÑÕß´¦ÓÚWAITING£¬ÏµÍ³¼ÙËÀ
+ * »½ĞÑµÄÓ¦¸ÃÊÇÒìÀà£¬ÓĞÊ±ºò»½ĞÑµÄÈ´ÊÇÍ¬Àà£¬µ¼ÖÂ¶¼ÔÚwating¡£¡£
  */
 public class P {
 
@@ -17,12 +17,12 @@ public class P {
 		try {
 			synchronized (lock) {
 				while (!ValueObject.value.equals("")) {
-					System.out.println("ç”Ÿäº§è€… "
-							+ Thread.currentThread().getName() + " WAITINGäº†â˜…");
+					System.out.println("Éú²úÕß "
+							+ Thread.currentThread().getName() + " WAITINGÁË¡ï");
 					lock.wait();
 				}
-				System.out.println("ç”Ÿäº§è€… " + Thread.currentThread().getName()
-						+ " RUNNABLEäº†");
+				System.out.println("Éú²úÕß " + Thread.currentThread().getName()
+						+ " RUNNABLEÁË");
 				String value = System.currentTimeMillis() + "_"
 						+ System.nanoTime();
 				ValueObject.value = value;

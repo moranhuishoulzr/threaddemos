@@ -1,5 +1,5 @@
 package chapter02.section02.thread_2_2_8.project_1_synchronizedBlockLockAll.test1.test2;
-
+//如果使用x作为锁，则与x内的同步方法也构成同步
 public class Service {
 
 	public void testMethod1(MyObject object) {
