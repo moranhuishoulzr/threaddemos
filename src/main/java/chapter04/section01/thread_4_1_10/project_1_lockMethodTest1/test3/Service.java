@@ -7,7 +7,7 @@ public class Service {
 
 	private ReentrantLock lock = new ReentrantLock();
 	private Condition newCondition = lock.newCondition();
-
+//lockÔÚÒ»¸ö·½·¨ÄÚÊÇÍ¬²½»¥³â           ÔÚÁ½¸ö·½·¨ÔÚ²»¹¹³ÉÍ¬²½»¥³â
 	public void waitMethod() {
 		try {
 			lock.lock();
@@ -22,8 +22,8 @@ public class Service {
 	public void notityMethod() {
 		try {
 			lock.lock();
-			System.out.println("æœ‰" + lock.getWaitQueueLength(newCondition)
-					+ "ä¸ªçº¿ç¨‹æ­£åœ¨ç­‰å¾…newCondition");//è¿”å›ç­‰å¾…æ­¤é”å®šç»™å®šç›¸å…³çš„ç»™å®šæ¡ä»¶Conditionçš„çº¿ç¨‹ä¼°è®¡æ•°ã€‚
+			System.out.println("ÓĞ" + lock.getWaitQueueLength(newCondition)//Ò²¾ÍÊÇ¶àÉÙ¸öÏß³Ì½øÈëµÈ´ı³Ø£¬µÈ´ı±»»½ĞÑ
+					+ "¸öÏß³ÌÕıÔÚµÈ´ınewCondition");//·µ»ØµÈ´ı´ËËø¶¨¸ø¶¨Ïà¹ØµÄ¸ø¶¨Ìõ¼şConditionµÄÏß³Ì¹À¼ÆÊı¡£
 			newCondition.signal();
 		} finally {
 			lock.unlock();

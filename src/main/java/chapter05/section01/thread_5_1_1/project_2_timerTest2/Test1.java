@@ -4,15 +4,15 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Timer;
 
-//æ‰§è¡Œä»»åŠ¡æ—¶é—´æ—©äºå½“å‰æ—¶é—´åˆ™ç«‹å³æ‰§è¡Œ
+//Ö´ĞĞÈÎÎñÊ±¼äÔçÓÚµ±Ç°Ê±¼äÔòÁ¢¼´Ö´ĞĞ
 public class Test1 {
 	
 	public static void main(String[] args) {
-		System.out.println("å½“å‰æ—¶é—´ä¸ºï¼š" + new Date());
+		System.out.println("µ±Ç°Ê±¼äÎª£º" + new Date());
 		Calendar calendarRef = Calendar.getInstance();
 		calendarRef.set(Calendar.SECOND,calendarRef.get(Calendar.SECOND) -10);
 		Date runDate = calendarRef.getTime();
-		System.out.println("è®¡åˆ’æ—¶é—´ä¸ºï¼š" + runDate);
+		System.out.println("¼Æ»®Ê±¼äÎª£º" + runDate);
 		MyTask task = new MyTask();
 		Timer timer = new Timer();
 		timer.schedule(task, runDate);

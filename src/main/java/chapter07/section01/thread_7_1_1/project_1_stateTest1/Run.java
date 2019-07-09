@@ -13,11 +13,11 @@ public class Run {
 	public static void main(String[] args) {
 		try {
 			MyThread t = new MyThread();
-			System.out.println("mainæ–¹æ³•ä¸­çš„çŠ¶æ€1ï¼š" + t.getState());
+			System.out.println("main·½·¨ÖĞµÄ×´Ì¬1£º" + t.getState());
 			Thread.sleep(1000);
 			t.start();
 			Thread.sleep(1000);
-			System.out.println("mainæ–¹æ³•ä¸­çš„çŠ¶æ€2ï¼š" + t.getState());
+			System.out.println("main·½·¨ÖĞµÄ×´Ì¬2£º" + t.getState());
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -9,14 +9,14 @@ public class Run {
 	static public class MyTask extends TimerTask {
 		@Override
 		public void run() {
-			System.out.println("杩愯浜嗭紒鏃堕棿涓猴細" + new Date());
+			System.out.println("运行了！时间为：" + new Date());
 		}
 	}
 	
 	public static void main(String[] args) {
 		MyTask task = new MyTask();
 		Timer timer = new Timer();
-		System.out.println("褰撳墠鏃堕棿:" + new Date());
+		System.out.println("当前时间:" + new Date());
 		timer.schedule(task, 7000);
 		
 	} 

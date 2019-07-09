@@ -13,6 +13,6 @@ public class MyTaskA extends TimerTask{
 	
 	@Override
 	public void run() {
-		System.out.println("ç¬¬" + i + "æ¬¡æ²¡æœ‰è¢«cancelå–æ¶ˆ");
+		System.out.println("µÚ" + i + "´ÎÃ»ÓĞ±»cancelÈ¡Ïû");
 	}
 }

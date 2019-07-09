@@ -13,7 +13,7 @@ public class Run {
 			MyThread t = new MyThread();
 			t.start();
 			Thread.sleep(1000);
-			System.out.println("main鏂规硶涓殑t鐘舵�侊細" + t.getState());
+			System.out.println("main方法中的t状态：" + t.getState());
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

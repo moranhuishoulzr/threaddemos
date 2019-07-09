@@ -8,8 +8,8 @@ public class RunNotFair {
 		Runnable runnable = new Runnable() {
 
 			public void run() {
-				System.out.println("â˜…çº¿ç¨‹" + Thread.currentThread().getName()
-						+ "è¿è¡Œäº†");
+				System.out.println("¡ïÏß³Ì" + Thread.currentThread().getName()
+						+ "ÔËĞĞÁË");
 				service.serviceMethod();
 			}
 		};

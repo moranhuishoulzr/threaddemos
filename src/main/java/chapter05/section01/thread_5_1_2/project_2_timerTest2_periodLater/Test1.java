@@ -8,11 +8,11 @@ import java.util.Timer;
 public class Test1 {
 	
 	public static void main(String[] args) {
-		System.out.println("褰撳墠鏃堕棿涓猴細" + new Date());
+		System.out.println("当前时间为：" + new Date());
 		Calendar calendarRef = Calendar.getInstance();
 		calendarRef.add(Calendar.SECOND, 10);
 		Date runDate = calendarRef.getTime();
-		System.out.println("璁″垝鏃堕棿涓猴細" + runDate);
+		System.out.println("计划时间为：" + runDate);
 		MyTaskA task = new MyTaskA();
 		Timer timer = new Timer();
 		timer.schedule(task, runDate, 3000);

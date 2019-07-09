@@ -7,7 +7,7 @@ public class MyTask extends TimerTask{
 	
 	@Override
 	public void run() {
-		System.out.println("浠诲姟鎵ц浜嗭紝鏃堕棿涓猴細"+new Date());
+		System.out.println("任务执行了，时间为："+new Date());
 	}
 	
 }

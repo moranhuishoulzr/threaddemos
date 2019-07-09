@@ -4,14 +4,14 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class Service {
 
-	public ReentrantLock lock = new ReentrantLock();
+	public ReentrantLock lock = new ReentrantLock();//Ä¬ÈÏ·Ç¹«Æ½Ëø
 
 	public void serviceMethod1() {
 		try {
 			lock.lock();
 			System.out.println("ThreadName=" + Thread.currentThread().getName()
-					+ "è¿›å…¥æ–¹æ³•ï¼");
-			Thread.sleep(Integer.MAX_VALUE);
+					+ "½øÈë·½·¨£¡");
+			Thread.sleep(Integer.MAX_VALUE);//Ë¯Ãß²»ÊÍ·ÅËø£¬ÆäËûÏß³ÌµÈ´ı´ËËø
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

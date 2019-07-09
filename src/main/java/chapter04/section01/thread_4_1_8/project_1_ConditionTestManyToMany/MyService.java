@@ -13,10 +13,10 @@ public class MyService {
 		try {
 			lock.lock();
 			while (hasValue == true) {
-				System.out.println("æœ‰å¯èƒ½â˜…â˜…è¿ç»­");
+				System.out.println("ÓĞ¿ÉÄÜ¡ï¡ïÁ¬Ğø");
 				condition.await();
 			}
-			System.out.println("æ‰“å°â˜…");
+			System.out.println("´òÓ¡¡ï");
 			hasValue = true;
 			condition.signal();
 			//condition.signalAll();
@@ -31,10 +31,10 @@ public class MyService {
 		try {
 			lock.lock();
 			while (hasValue == false) {
-				System.out.println("æœ‰å¯èƒ½â˜†â˜†è¿ç»­");
+				System.out.println("ÓĞ¿ÉÄÜ¡î¡îÁ¬Ğø");
 				condition.await();
 			}
-			System.out.println("æ‰“å°â˜†");
+			System.out.println("´òÓ¡¡î");
 			hasValue = false;
 			condition.signal();
 			//condition.signalAll();

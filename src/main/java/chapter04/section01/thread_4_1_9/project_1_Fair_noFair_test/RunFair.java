@@ -1,5 +1,9 @@
 package chapter04.section01.thread_4_1_9.project_1_Fair_noFair_test;
 
+/**
+ * ¹«Æ½Ëø£ºÏÈÆô¶¯µÄÏÈ»ñµÃËø
+ * ·Ç¹«Æ½Ëø£ºÏÈÆô¶¯µÄ²»Ò»¶¨ÏÈ»ñµÃËø
+ */
 public class RunFair {
 
 	public static void main(String[] args) throws InterruptedException {
@@ -8,8 +12,8 @@ public class RunFair {
 		Runnable runnable = new Runnable() {
 
 			public void run() {
-				System.out.println("â˜…çº¿ç¨‹" + Thread.currentThread().getName()
-						+ "è¿è¡Œäº†");
+				System.out.println("¡ïÏß³Ì" + Thread.currentThread().getName()
+						+ "ÔËĞĞÁË");
 				service.serviceMethod();
 			}
 		};

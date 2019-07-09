@@ -7,7 +7,7 @@ public class MyTaskA extends TimerTask {
 	@Override
 	public void run() {
 		System.out.println("A run timer =" + new Date());
-		this.cancel();//æŠŠè‡ªèº«ä»»åŠ¡ä»é˜Ÿåˆ—ä¸­æ¸…é™¤
-		System.out.println("A ä»»å‹™è‡ªå·±ç§»é™¤è‡ªå·±");
+		this.cancel();//°Ñ×ÔÉíÈÎÎñ´Ó¶ÓÁĞÖĞÇå³ı
+		System.out.println("A ÈÎ„Õ×Ô¼ºÒÆ³ı×Ô¼º");
 	}
 }

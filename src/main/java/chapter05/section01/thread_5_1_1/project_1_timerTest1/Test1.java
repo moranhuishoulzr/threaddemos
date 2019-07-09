@@ -7,13 +7,13 @@ import java.util.Timer;
 public class Test1 {
 	
 	public static void main(String[] args) {
-		System.out.println("å½“å‰æ—¶é—´ä¸ºï¼š"+new Date());
+		System.out.println("µ±Ç°Ê±¼äÎª£º"+new Date());
 		Calendar calendarRef = Calendar.getInstance();
 		calendarRef.add(Calendar.SECOND, 10);
 		Date runDate = calendarRef.getTime();
 		
 		MyTask task = new MyTask();
-		Timer timer = new Timer();//åˆ›å»ºä¸€ä¸ªTimerå°±æ˜¯åˆ›å»ºä¸€ä¸ªæ–°çš„çº¿ç¨‹
+		Timer timer = new Timer();//´´½¨Ò»¸öTimer¾ÍÊÇ´´½¨Ò»¸öĞÂµÄÏß³Ì£¬Õâ¸öÏß³Ì»áÒ»Ö±³ÖĞø£¬²»»áÍ£Ö¹
 		timer.schedule(task, runDate);
 		
 	}

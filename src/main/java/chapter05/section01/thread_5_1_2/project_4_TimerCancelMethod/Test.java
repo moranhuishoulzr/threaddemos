@@ -7,17 +7,17 @@ import java.util.Timer;
 public class Test {
 	
 	public static void main(String[] args) throws InterruptedException{
-		System.out.println("å½“å‰æ—¶é—´ä¸ºï¼š" + new Date());
+		System.out.println("µ±Ç°Ê±¼äÎª£º" + new Date());
 		Calendar calendarRef1 = Calendar.getInstance();
 		Date runDate1 = calendarRef1.getTime();
-		System.out.println("è®¡åˆ’æ—¶é—´ä¸ºï¼š" + runDate1);
+		System.out.println("¼Æ»®Ê±¼äÎª£º" + runDate1);
 		MyTaskA task1 = new MyTaskA();
 		MyTaskB task2 = new MyTaskB();
 		Timer timer = new Timer();
 		timer.schedule(task1, runDate1, 2000);
 		timer.schedule(task2, runDate1, 2000);
 		Thread.sleep(10000);
-		timer.cancel();//æŠŠå…¨éƒ¨ä»»åŠ¡æ¸…é™¤
+		timer.cancel();//°ÑÈ«²¿ÈÎÎñÇå³ı
 	}
 	
 }

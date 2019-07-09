@@ -4,19 +4,20 @@ public class Run {
 	// NEW,
 	// RUNNABLE,
 	// TERMINATED,
-	// BLOCKED,ç­‰å¾…é”çš„çŠ¶æ€
-	// WAITING,wait()æ—¶çš„çŠ¶æ€
-	// TIMED_WAITING,ç¡è§‰æ—¶çš„çŠ¶æ€
+	// BLOCKED,µÈ´ıËøµÄ×´Ì¬
+	// WAITING,wait()Ê±µÄ×´Ì¬
+	// TIMED_WAITING,Ë¯¾õÊ±µÄ×´Ì¬
 
 	public static void main(String[] args) throws InterruptedException {
 		MyThread1 t1 = new MyThread1();
 		t1.setName("a");
 		t1.start();
+		Thread.sleep(2000);
 		MyThread2 t2 = new MyThread2();
 		t2.setName("b");
 		t2.start();
 		Thread.sleep(1000);
-		System.out.println("mainæ–¹æ³•ä¸­çš„t2çŠ¶æ€ï¼š" + t2.getState());
+		System.out.println("main·½·¨ÖĞµÄt2×´Ì¬£º" + t2.getState());
 
 	}
 }

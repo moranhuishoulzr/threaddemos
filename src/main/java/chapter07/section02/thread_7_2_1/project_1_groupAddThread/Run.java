@@ -5,15 +5,15 @@ public class Run {
 		ThreadA aRunnable = new ThreadA();
 		ThreadB bRunnable = new ThreadB();
 
-		ThreadGroup group = new ThreadGroup("é«˜æ´ªå²©çš„çº¿ç¨‹ç»„");
+		ThreadGroup group = new ThreadGroup("¸ßºéÑÒµÄÏß³Ì×é");
 
 		Thread aThread = new Thread(group, aRunnable);
 		Thread bThread = new Thread(group, bRunnable);
 		aThread.start();
 		bThread.start();
 
-		System.out.println("æ´»åŠ¨çš„çº¿ç¨‹æ•°ä¸ºï¼š" + group.activeCount());
-		System.out.println("çº¿ç¨‹ç»„çš„åç§°ä¸ºï¼š" + group.getName());
+		System.out.println("»î¶¯µÄÏß³ÌÊıÎª£º" + group.activeCount());
+		System.out.println("Ïß³Ì×éµÄÃû³ÆÎª£º" + group.getName());
 
 	}
 }

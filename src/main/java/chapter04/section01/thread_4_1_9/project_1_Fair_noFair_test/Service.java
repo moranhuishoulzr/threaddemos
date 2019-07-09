@@ -1,6 +1,6 @@
 package chapter04.section01.thread_4_1_9.project_1_Fair_noFair_test;
 /**
- * å…¬å¹³é”è¡¨ç¤ºçº¿ç¨‹è·å–é”çš„é¡ºåºæ˜¯æŒ‰ç…§çº¿ç¨‹åŠ é”çš„é¡ºåºæ¥åˆ†é…çš„ï¼Œå³å…ˆæ¥å…ˆå¾—åˆ°é”ã€‚éå…¬å¹³é”æ˜¯ä¸€ç§é”çš„çº¿ç¨‹æŠ¢å æœºåˆ¶
+ * ¹«Æ½Ëø±íÊ¾Ïß³Ì»ñÈ¡ËøµÄË³ĞòÊÇ°´ÕÕÏß³Ì¼ÓËøµÄË³ĞòÀ´·ÖÅäµÄ£¬¼´ÏÈÀ´ÏÈµÃµ½Ëø¡£·Ç¹«Æ½ËøÊÇÒ»ÖÖËøµÄÏß³ÌÇÀÕ¼»úÖÆ
  */
 
 import java.util.concurrent.locks.ReentrantLock;
@@ -18,7 +18,7 @@ public class Service {
 		try {
 			lock.lock();
 			System.out.println("ThreadName=" + Thread.currentThread().getName()
-					+ "è·å¾—é”å®š");
+					+ "»ñµÃËø¶¨");
 		} finally {
 			lock.unlock();
 		}

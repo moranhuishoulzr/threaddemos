@@ -20,7 +20,7 @@ public class Run {
 			threadArray[i].start();
 		}
 		Thread.sleep(2000);
-		System.out.println("æœ‰çº¿ç¨‹æ•°ï¼š" + service.lock.getQueueLength() + "åœ¨ç­‰å¾…è·å–é”ï¼");//ç­‰å¾…æ­¤é”çš„çº¿ç¨‹æ•°é‡
+		System.out.println("ÓĞÏß³ÌÊı£º" + service.lock.getQueueLength() + "ÔÚµÈ´ı»ñÈ¡Ëø£¡");//µÈ´ı´ËËøµÄÏß³ÌÊıÁ¿
 
 	}
 }

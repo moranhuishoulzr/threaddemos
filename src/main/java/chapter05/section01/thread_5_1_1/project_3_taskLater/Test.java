@@ -4,20 +4,20 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Timer;
 /**
- * TimerTaskæ˜¯ä»¥é˜Ÿåˆ—çš„æ–¹å¼ä¸€ä¸ªä¸€ä¸ªè¢«é¡ºåºæ‰§è¡Œï¼Œæ‰€ä»¥æ‰§è¡Œçš„æ—¶é—´æœ‰å¯èƒ½å’Œé¢„æœŸçš„æ—¶é—´ä¸ä¸€è‡´ï¼Œå› ä¸ºå‰é¢çš„ä»»åŠ¡æœ‰å¯èƒ½æ¶ˆè€—çš„æ—¶é—´æ›´é•¿ï¼Œåé¢çš„ä»»åŠ¡è¢«å»¶è¿Ÿ
+ * TimerTaskÊÇÒÔ¶ÓÁĞµÄ·½Ê½Ò»¸öÒ»¸ö±»Ë³ĞòÖ´ĞĞ£¬ËùÒÔÖ´ĞĞµÄÊ±¼äÓĞ¿ÉÄÜºÍÔ¤ÆÚµÄÊ±¼ä²»Ò»ÖÂ£¬ÒòÎªÇ°ÃæµÄÈÎÎñÓĞ¿ÉÄÜÏûºÄµÄÊ±¼ä¸ü³¤£¬ºóÃæµÄÈÎÎñ±»ÑÓ³Ù
  */
 
 public class Test {
 	public static void main(String[] args) {
-		System.out.println("å½“å‰æ—¶é—´ä¸ºï¼š" + new Date());
+		System.out.println("µ±Ç°Ê±¼äÎª£º" + new Date());
 		Calendar calendarRef1 = Calendar.getInstance();
 		Date runDate1 = calendarRef1.getTime();
-		System.out.println("Aè®¡åˆ’æ—¶é—´ä¸ºï¼š" + runDate1);
+		System.out.println("A¼Æ»®Ê±¼äÎª£º" + runDate1);
 		
 		Calendar calendarRef2 = Calendar.getInstance();
 		calendarRef2.add(Calendar.SECOND, 10);
 		Date runDate2 = calendarRef2.getTime();
-		System.out.println("Bè®¡åˆ’æ—¶é—´ä¸ºï¼š" + runDate2);
+		System.out.println("B¼Æ»®Ê±¼äÎª£º" + runDate2);
 		
 		MyTaskA task1 = new MyTaskA();
 		MyTaskB task2 = new MyTaskB();

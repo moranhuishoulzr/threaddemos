@@ -3,10 +3,43 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>gbk</encoding>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
 
     <groupId>com.loveincode</groupId>
     <artifactId>Java-Multi-Thread-Programming</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <properties>
+        <project.build.sourceEncoding>gbk</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <!--引入javax.servlet.*-->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <!--servlet api-->
+            <artifactId>servlet-api</artifactId>
+            <version>2.4</version>
+            <!--provided依赖范围表示不会打包到war中，web容器中已经有这些包，但是编译的时候需要这些包-->
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
+    </dependencies>
 
 
 </project>
